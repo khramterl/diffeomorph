@@ -13,18 +13,18 @@ function diffeomorphic()
 %Rhodri Cusack and Bobby Stojanoski July 2013
 %===========================================================================
 
-maxdistortion=160; % changes max amount of distortion
-nsteps=40; % number of steps
+maxdistortion=80; % changes max amount of distortion
+nsteps=20; % number of steps
 imsz= 1000; % size of output images (bigger or equal to 2 x input image)
 
-picpath='directory with images'
-outpicpath='output directory'
+picpath='C:\Users\Priscila\OneDrive\Documentos\Wien\Methods\pilot-task-in'
+outpicpath='C:\Users\Priscila\OneDrive\Documentos\Wien\Methods\pilot-task-out'
 %create output directory
 if ~exist(outpicpath, 'dir')
     mkdir(outpicpath);
 end
 
-imgtype='jpg'; %file type
+imgtype='png'; %file type
 fns=dir(fullfile(picpath,sprintf('*.%s',imgtype)));
 figure(10);
 
